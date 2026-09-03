@@ -1,138 +1,67 @@
 # 🎯 Sorting Visualizer + E-Commerce Demo
 
-An interactive web-based **sorting algorithm visualizer** developed as a university **Design & Analysis of Algorithms (DAA)** project. The application visualizes sorting algorithms in real time while allowing the algorithms to operate on e-commerce product data using different sorting criteria.
+A comprehensive sorting algorithm visualizer with e-commerce product data integration, built for university DAA (Design and Analysis of Algorithms) project.
 
 ## 📋 Features
 
-### 🔢 Sorting Algorithms
+### ✨ Sorting Algorithms Implemented
+1. **Bubble Sort** - Simple comparison-based algorithm
+2. **Selection Sort** - Minimal swap operations
+3. **Insertion Sort** - Efficient for nearly sorted data
+4. **Merge Sort** - Divide and conquer approach
+5. **Quick Sort** - Fast average-case performance
+6. **Heap Sort** - Guaranteed O(n log n) performance
+7. **Counting Sort** - Linear time for limited range data
+8. **Radix Sort** - Digit-by-digit sorting for integers
 
-The project implements the following sorting algorithms with additional variants:
+### 🎨 Visualization Features
+- **Dual View Mode**:
+  - 📊 **Bars View**: Visual representation with colored bars
+  - 🛒 **Products View**: Real product cards with images, prices, and ratings
+  
+- **Color-Coded States**:
+  - 🟣 Default (Purple gradient)
+  - 🟡 Comparing (Yellow)
+  - 🔴 Swapping (Red)
+  - 🟢 Sorted (Green)
+  - 🟣 Pivot (Purple)
 
-* **Bubble Sort**
+- **Real-Time Statistics**:
+  - Comparisons count
+  - Swaps count
+  - Array accesses
+  - Time elapsed
 
-  * Standard Bubble Sort
-  * Cocktail Shaker Sort
-* **Selection Sort**
+### ⚙️ Customization Options
+- **Array Size**: 5 to 50 elements
+- **Speed Control**: 5 levels (Very Slow to Very Fast)
+- **Sort Criteria**:
+  - Price
+  - Rating
+  - Product ID
+  - Random values
 
-  * Standard Selection Sort
-  * Stable Selection Sort
-* **Insertion Sort**
-
-  * Standard Insertion Sort
-  * Binary Insertion Sort
-  * Shell Sort
-* **Merge Sort**
-
-  * Standard Merge Sort
-  * Iterative Merge Sort
-  * Natural Merge Sort
-* **Quick Sort**
-
-  * Standard Quick Sort
-  * Hoare Partition
-  * Median-of-Three
-  * 3-Way Partition
-* **Heap Sort**
-
-  * Standard Heap Sort
-  * Min Heap variant
-  * K-ary Heap variant
-* **Counting Sort**
-
-  * Standard Counting Sort
-  * Rating-optimized variant
-* **Radix Sort**
-
-  * LSD Radix Sort
-  * MSD Radix Sort
-  * Product ID Radix Sort
-  * Base-256 Radix Sort
-
-### 🎨 Visualization
-
-* Real-time animated sorting process
-* **Bars View** for visualizing array values
-* **Products View** for visualizing e-commerce products
-* Color-coded sorting states:
-
-  * Default
-  * Comparing
-  * Swapping
-  * Sorted
-  * Pivot
-* Visual legend explaining sorting states
-* Smooth sorting animations
-* Start and stop controls
-
-### 📊 Sorting Statistics
-
-The application tracks sorting activity in real time:
-
-* Comparisons
-* Swaps
-* Array accesses
-* Elapsed time
-
-### ⚙️ Sorting Controls
-
-* Select the sorting algorithm
-* Select sorting criteria:
-
-  * Price
-  * Rating
-  * Product ID
-  * Random values
-* Adjust array size from **5 to 50 elements**
-* Adjust visualization speed across **5 levels**
-* Generate a new random array
-* Stop an ongoing sorting process
-
-### 🛒 E-Commerce Data
-
-The project integrates sample product data containing:
-
-* Product names
-* Product IDs
-* Prices
-* Ratings
-* Product images
-
-Products can be sorted using their available numeric attributes and displayed as product cards during visualization.
-
-### 📚 Algorithm Information
-
-The interface provides information for the selected algorithm, including:
-
-* Time complexity
-* Space complexity
-* Best use cases
+### 📊 Algorithm Information Display
+- Time Complexity
+- Space Complexity
+- Best Use Cases
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
-* Modern web browser such as Chrome, Firefox, Edge, or Safari
-* Python 3.x *(only required if using the optional local server)*
-
-No external JavaScript framework or package installation is required.
+- Modern web browser (Chrome, Firefox, Edge, Safari)
+- No additional dependencies required!
 
 ### Installation
-
-1. Clone or download the repository.
-2. Open the project folder.
-3. Open `index.html` directly in a browser.
-
-Alternatively, run a local server:
+1. Download or clone the project
+2. Open `index.html` in your web browser
+3. Start visualizing!
 
 ```bash
+# If you want to use a local server
 cd SortingVisualizer-Ecommerce
 python -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
+# Then open http://localhost:8000 in your browser
 ```
 
 ## 🎮 How to Use
@@ -146,6 +75,48 @@ http://localhost:8000
 7. Click **Start Sorting** to begin the visualization.
 8. Use **Stop** to interrupt an ongoing sorting process.
 9. Monitor comparisons, swaps, array accesses, and elapsed time during execution.
+
+
+## 🔬 Algorithm Complexity Reference
+
+| Algorithm | Time Complexity (Best) | Time Complexity (Average) | Time Complexity (Worst) | Space Complexity |
+|-----------|----------------------|-------------------------|------------------------|------------------|
+| Bubble Sort | O(n) | O(n²) | O(n²) | O(1) |
+| Selection Sort | O(n²) | O(n²) | O(n²) | O(1) |
+| Insertion Sort | O(n) | O(n²) | O(n²) | O(1) |
+| Merge Sort | O(n log n) | O(n log n) | O(n log n) | O(n) |
+| Quick Sort | O(n log n) | O(n log n) | O(n²) | O(log n) |
+| Heap Sort | O(n log n) | O(n log n) | O(n log n) | O(1) |
+| Counting Sort | O(n + k) | O(n + k) | O(n + k) | O(k) |
+| Radix Sort | O(d × n) | O(d × n) | O(d × n) | O(n + k) |
+
+*Note: k = range of input, d = number of digits*
+
+## 💡 Use Cases for Each Algorithm
+
+- **Bubble Sort**: Educational purposes, very small datasets
+- **Selection Sort**: Small datasets, memory writes are costly
+- **Insertion Sort**: Nearly sorted data, small datasets, online sorting
+- **Merge Sort**: Large datasets, stable sorting required, external sorting
+- **Quick Sort**: Large datasets, average-case performance critical
+- **Heap Sort**: Finding top K elements, priority queues
+- **Counting Sort**: Integer data with limited range (ratings 0-5)
+- **Radix Sort**: Fixed-digit integers (product IDs, zip codes)
+
+## 🛠️ Technical Details
+
+### Technologies Used
+- **HTML5**: Semantic markup and structure
+- **CSS3**: Modern styling with gradients, animations, and flexbox/grid
+- **Vanilla JavaScript**: Pure JS with async/await for animations
+- **JSON**: Data storage for products
+
+### Key Features in Code
+- **Modular Architecture**: Each algorithm in separate file
+- **Async/Await**: Smooth animations without blocking
+- **State Management**: Centralized state object
+- **Event-Driven**: Responsive UI interactions
+- **Responsive Design**: Works on desktop and mobile
 
 ## 📁 Project Structure
 
@@ -173,26 +144,30 @@ SortingVisualizer-Ecommerce/
 └── QUICKSTART.md
 ```
 
-## 🛠️ Technologies Used
+## 🎓 Educational Value
 
-* **HTML5** — Application structure
-* **CSS3** — Styling, layouts, gradients, animations, and responsive design
-* **Vanilla JavaScript** — Sorting logic, visualization, state management, and event handling
-* **JSON** — E-commerce product data
-* **Python HTTP Server** — Optional local development server
+This project demonstrates:
+- Algorithm implementation and optimization
+- Time and space complexity analysis
+- Visual learning and comprehension
+- Real-world data structure applications
+- Modern web development practices
+- Asynchronous programming
+- Event-driven architecture
 
-## 🧠 DAA Concepts Demonstrated
+## 🤝 Contributing
 
-* Comparison-based sorting
-* Non-comparison sorting
-* Divide-and-conquer algorithms
-* Heap-based sorting
-* Stable sorting
-* Sorting algorithm variants
-* Time and space complexity
-* Algorithm visualization
-* Performance statistics
-* Real-world data sorting
+Feel free to fork this project and add:
+- New sorting algorithms (Tim Sort, Shell Sort, etc.)
+- Additional visualization modes
+- Performance benchmarking
+- Sound effects
+- Export/Import data features
+- Algorithm comparison mode
+
+## 📝 License
+
+This project is created for educational purposes as part of a university DAA project.
 
 ## 🎓 Project Purpose
 
@@ -210,3 +185,5 @@ Air University Multan Campus
 ---
 
 *Built as an academic project to explore and visualize sorting algorithms through interactive web development.*
+
+*Insha Allah, this project will help you understand sorting algorithms better! 🚀*
