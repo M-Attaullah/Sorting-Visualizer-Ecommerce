@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SortiFy - E-Commerce Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>SortiFy - E-Commerce Visualizer</h1>
+        <p>Visualize sorting algorithms with real e-commerce data</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <div class="control-section">
+                <h3>Algorithm Selection</h3>
+                <select id="algorithmSelect" class="control-input">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="merge">Merge Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="heap">Heap Sort</option>
+                    <option value="counting">Counting Sort</option>
+                    <option value="radix">Radix Sort</option>
+                </select>
+            </div>
+
+            <div class="control-section">
+                <h3>Sort By</h3>
+                <select id="sortCriteria" class="control-input">
+                    <option value="price">Price</option>
+                    <option value="rating">Rating</option>
+                    <option value="id">Product ID</option>
+                </select>
+            </div>
+
+            <div class="control-section">
+                <h3>Visualization Mode</h3>
+                <div class="view-toggle">
+                    <button id="barsView" class="view-btn active">📊 Bars</button>
+                    <button id="productsView" class="view-btn">🛒 Products</button>
+                </div>
+            </div>
+
+            <div class="control-section">
+                <h3>Array Size: <span id="arraySizeValue">15</span></h3>
+                <input type="range" id="arraySize" min="5" max="50" value="15" class="slider">
+            </div>
+
+            <div class="control-section">
+                <h3>Speed: <span id="speedValue">Medium</span></h3>
+                <input type="range" id="speed" min="1" max="5" value="3" class="slider">
+            </div>
+
+            <div class="control-section">
+                <div class="button-group">
+                    <button id="generateArray" class="btn btn-primary">🔄 Generate New Array</button>
+                    <button id="startSort" class="btn btn-success">▶️ Start Sorting</button>
+                    <button id="stopSort" class="btn btn-danger" disabled>⏹️ Stop</button>
+                </div>
+            </div>
+
+            <!-- Algorithm Info -->
+            <div class="control-section algorithm-info">
+                <h3>Algorithm Info</h3>
+                <div id="algoInfo">
+                    <p><strong>Time Complexity:</strong> <span id="timeComplexity">O(n²)</span></p>
+                    <p><strong>Space Complexity:</strong> <span id="spaceComplexity">O(1)</span></p>
+                    <p><strong>Best Use Case:</strong> <span id="useCase">Small datasets, educational purposes</span></p>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="control-section stats">
+                <h3>Statistics</h3>
+                <div id="statistics">
+                    <p>Comparisons: <span id="comparisons">0</span></p>
+                    <p>Swaps: <span id="swaps">0</span></p>
+                    <p>Array Accesses: <span id="arrayAccesses">0</span></p>
+                    <p>Time Elapsed: <span id="timeElapsed">0</span>ms</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visualization Area -->
+        <div class="visualization-area">
+            <!-- Bars Visualization -->
+            <div id="barsContainer" class="bars-container active">
+                <div id="barsDisplay" class="bars-display"></div>
+            </div>
+
+            <!-- Products Visualization -->
+            <div id="productsContainer" class="products-container">
+                <div id="productsDisplay" class="products-display"></div>
+            </div>
+
+            <!-- Legend -->
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="color-box default"></span> Default
+                </div>
+                <div class="legend-item">
+                    <span class="color-box comparing"></span> Comparing
+                </div>
+                <div class="legend-item">
+                    <span class="color-box swapping"></span> Swapping
+                </div>
+                <div class="legend-item">
+                    <span class="color-box sorted"></span> Sorted
+                </div>
+                <div class="legend-item">
+                    <span class="color-box pivot"></span> Pivot
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>E-commerce Visualizer, DAA Project At AUMC| © 2025</p>
+    </footer>
+
+    <!-- Load Algorithm Files -->
+    <script src="algorithms/bubble.js"></script>
+    <script src="algorithms/selection.js"></script>
+    <script src="algorithms/insertion.js"></script>
+    <script src="algorithms/merge.js"></script>
+    <script src="algorithms/quick.js"></script>
+    <script src="algorithms/heap.js"></script>
+    <script src="algorithms/counting.js"></script>
+    <script src="algorithms/radix.js"></script>
+    
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>

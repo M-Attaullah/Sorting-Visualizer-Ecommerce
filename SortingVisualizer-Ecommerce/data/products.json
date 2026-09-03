@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1001,
+        "name": "Wireless Headphones",
+        "price": 22400,
+        "rating": "4.5",
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&h=150&fit=crop",
+        "category": "Electronics"
+    },
+    {
+        "id": 1015,
+        "name": "Smart Watch",
+        "price": 56000,
+        "rating": "4.7",
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&h=150&fit=crop",
+        "category": "Electronics"
+    },
+    {
+        "id": 1003,
+        "name": "Coffee Maker",
+        "price": 12740,
+        "rating": "4.2",
+        "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=200&h=150&fit=crop",
+        "category": "Home & Kitchen"
+    },
+    {
+        "id": 1022,
+        "name": "Running Shoes",
+        "price": 25200,
+        "rating": "4.6",
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&h=150&fit=crop",
+        "category": "Sports"
+    },
+    {
+        "id": 1008,
+        "name": "Laptop Backpack",
+        "price": 9800,
+        "rating": "4.3",
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&h=150&fit=crop",
+        "category": "Accessories"
+    },
+    {
+        "id": 1012,
+        "name": "Gaming Mouse",
+        "price": 14000,
+        "rating": "4.8",
+        "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=200&h=150&fit=crop",
+        "category": "Electronics"
+    },
+    {
+        "id": 1005,
+        "name": "Yoga Mat",
+        "price": 7000,
+        "rating": "4.1",
+        "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=200&h=150&fit=crop",
+        "category": "Sports"
+    },
+    {
+        "id": 1019,
+        "name": "Bluetooth Speaker",
+        "price": 16800,
+        "rating": "4.4",
+        "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=200&h=150&fit=crop",
+        "category": "Electronics"
+    },
+    {
+        "id": 1007,
+        "name": "Water Bottle",
+        "price": 4480,
+        "rating": "4.0",
+        "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=200&h=150&fit=crop",
+        "category": "Sports"
+    },
+    {
+        "id": 1025,
+        "name": "Desk Lamp",
+        "price": 9100,
+        "rating": "4.5",
+        "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=200&h=150&fit=crop",
+        "category": "Home & Office"
+    },
+    {
+        "id": 1011,
+        "name": "Sunglasses",
+        "price": 19600,
+        "rating": "4.6",
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=200&h=150&fit=crop",
+        "category": "Accessories"
+    },
+    {
+        "id": 1004,
+        "name": "Phone Case",
+        "price": 3640,
+        "rating": "3.9",
+        "image": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=200&h=150&fit=crop",
+        "category": "Accessories"
+    },
+    {
+        "id": 1018,
+        "name": "Cookbook",
+        "price": 6440,
+        "rating": "4.7",
+        "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=200&h=150&fit=crop",
+        "category": "Books"
+    },
+    {
+        "id": 1009,
+        "name": "Plant Pot",
+        "price": 5180,
+        "rating": "4.2",
+        "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=200&h=150&fit=crop",
+        "category": "Home & Garden"
+    },
+    {
+        "id": 1014,
+        "name": "Mechanical Keyboard",
+        "price": 36400,
+        "rating": "4.9",
+        "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=200&h=150&fit=crop",
+        "category": "Electronics"
+    },
+    {
+        "id": 1020,
+        "name": "Wall Clock",
+        "price": 8120,
+        "rating": "4.3",
+        "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=200&h=150&fit=crop",
+        "category": "Home & Office"
+    },
+    {
+        "id": 1006,
+        "name": "Travel Pillow",
+        "price": 5600,
+        "rating": "4.1",
+        "image": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=200&h=150&fit=crop",
+        "category": "Travel"
+    },
+    {
+        "id": 1023,
+        "name": "Fitness Tracker",
+        "price": 25200,
+        "rating": "4.5",
+        "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=200&h=150&fit=crop",
+        "category": "Electronics"
+    },
+    {
+        "id": 1002,
+        "name": "Canvas Tote Bag",
+        "price": 4760,
+        "rating": "4.0",
+        "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=200&h=150&fit=crop",
+        "category": "Accessories"
+    },
+    {
+        "id": 1016,
+        "name": "Electric Kettle",
+        "price": 11200,
+        "rating": "4.4",
+        "image": "https://images.unsplash.com/photo-1564903243100-e841fca2f45a?w=200&h=150&fit=crop",
+        "category": "Home & Kitchen"
+    }
+]
